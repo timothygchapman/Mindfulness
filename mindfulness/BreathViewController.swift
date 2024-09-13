@@ -54,7 +54,7 @@ class BreathViewController: UIViewController {
         Task {
             do {
                 while true {
-                    instructionLabel.text = "Breath In"
+                    instructionLabel.text = "Breath  In"
                     try await Task.sleep(nanoseconds: UInt64(5000000000))
                     instructionLabel.text = "Hold"
                     try await Task.sleep(nanoseconds: UInt64(5000000000))
