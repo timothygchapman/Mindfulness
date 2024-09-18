@@ -16,7 +16,7 @@
 		A379CC3D2B8F9323005D9F8B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */; };
 		A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3E2B962EED005D9F8B /* QuoteController.swift */; };
 		A379CC412B962F05005D9F8B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC402B962F05005D9F8B /* Quote.swift */; };
-		E997C4CC2C99E00200C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4CB2C99E00200C40C30 /* CheckInObject.swift */; };
+		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		A379CC3E2B962EED005D9F8B /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		A379CC402B962F05005D9F8B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		E997C4CB2C99E00200C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckInObject.swift; path = ../../../../GitHub/Mindfulness/mindfulness/CheckInObject.swift; sourceTree = "<group>"; };
+		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		A379CC252B8E36B4005D9F8B /* mindfulness */ = {
 			isa = PBXGroup;
 			children = (
-				E997C4CB2C99E00200C40C30 /* CheckInObject.swift */,
+				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				A379CC262B8E36B4005D9F8B /* AppDelegate.swift */,
 				A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */,
 				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */,
-				E997C4CC2C99E00200C40C30 /* CheckInObject.swift in Sources */,
+				E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */,
 				A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */,
 				A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
