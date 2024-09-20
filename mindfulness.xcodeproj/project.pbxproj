@@ -17,6 +17,8 @@
 		A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3E2B962EED005D9F8B /* QuoteController.swift */; };
 		A379CC412B962F05005D9F8B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC402B962F05005D9F8B /* Quote.swift */; };
 		DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */; };
+		DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */; };
+		DB732F142C9B291100F3C77F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB732F132C9B291100F3C77F /* DataStore.swift */; };
 		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		A379CC3E2B962EED005D9F8B /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		A379CC402B962F05005D9F8B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathExercise.swift; sourceTree = "<group>"; };
+		DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreController.swift; sourceTree = "<group>"; };
+		DB732F132C9B291100F3C77F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,10 +70,10 @@
 		A379CC252B8E36B4005D9F8B /* mindfulness */ = {
 			isa = PBXGroup;
 			children = (
-				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				A379CC262B8E36B4005D9F8B /* AppDelegate.swift */,
 				A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */,
 				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
+				DB4880E82C9DB95E00B8C6AB /* Controllers */,
 				DB44CEAE2C99CB6C00C7E0AC /* Models */,
 				A379CC2C2B8E36B4005D9F8B /* Main.storyboard */,
 				A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */,
@@ -86,8 +90,18 @@
 			isa = PBXGroup;
 			children = (
 				DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */,
+				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
+				DB732F132C9B291100F3C77F /* DataStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DB4880E82C9DB95E00B8C6AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +180,10 @@
 				E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */,
 				A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */,
 				A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */,
+				DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
 				A379CC412B962F05005D9F8B /* Quote.swift in Sources */,
+				DB732F142C9B291100F3C77F /* DataStore.swift in Sources */,
 				A379CC3D2B8F9323005D9F8B /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

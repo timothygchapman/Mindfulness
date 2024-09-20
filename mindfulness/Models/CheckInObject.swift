@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CheckIn {
+struct CheckIn: Codable {
     let id: String
     let timeStamp: Date
     let journalEntry: String
@@ -24,7 +24,7 @@ struct CheckIn {
 extension CheckIn {
     
     // Enum to represent different mood emojis
-    enum MoodEmoji: String, CaseIterable {
+    enum MoodEmoji: String, CaseIterable, Codable {
         case happy = "😊"
         case sad = "😢"
         case angry = "😠"
