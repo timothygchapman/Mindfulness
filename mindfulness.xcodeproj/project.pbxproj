@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */; };
 		A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC262B8E36B4005D9F8B /* AppDelegate.swift */; };
 		A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */; };
-		A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */; };
 		A379CC2E2B8E36B4005D9F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2C2B8E36B4005D9F8B /* Main.storyboard */; };
 		A379CC302B8E36B5005D9F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */; };
 		A379CC332B8E36B5005D9F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC312B8E36B5005D9F8B /* LaunchScreen.storyboard */; };
@@ -24,10 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		A379CC232B8E36B4005D9F8B /* mindfulness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfulness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A379CC262B8E36B4005D9F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		A379CC2D2B8E36B4005D9F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A379CC322B8E36B5005D9F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 			children = (
 				A379CC262B8E36B4005D9F8B /* AppDelegate.swift */,
 				A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */,
-				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
 				DB4880E82C9DB95E00B8C6AB /* Controllers */,
 				E90E12092C9B2DF80068F560 /* ViewControllers */,
 				DB44CEAE2C99CB6C00C7E0AC /* Models */,
@@ -92,7 +91,6 @@
 		DB44CEAE2C99CB6C00C7E0AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */,
 				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				DB732F132C9B291100F3C77F /* DataStore.swift */,
@@ -106,11 +104,13 @@
 				DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
 		E90E12092C9B2DF80068F560 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
 				E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */,
+				9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,10 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */,
 				A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */,
 				DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */,
 				E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */,
-				A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */,
 				A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */,
 				DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
