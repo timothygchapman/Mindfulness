@@ -17,6 +17,7 @@
 		A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3E2B962EED005D9F8B /* QuoteController.swift */; };
 		A379CC412B962F05005D9F8B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC402B962F05005D9F8B /* Quote.swift */; };
 		DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */; };
+		E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */; };
 		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		A379CC3E2B962EED005D9F8B /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		A379CC402B962F05005D9F8B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathExercise.swift; sourceTree = "<group>"; };
+		E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheckInViewController.swift; sourceTree = "<group>"; };
 		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,10 +68,9 @@
 		A379CC252B8E36B4005D9F8B /* mindfulness */ = {
 			isa = PBXGroup;
 			children = (
-				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				A379CC262B8E36B4005D9F8B /* AppDelegate.swift */,
 				A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */,
-				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
+				E90E12092C9B2DF80068F560 /* ViewControllers */,
 				DB44CEAE2C99CB6C00C7E0AC /* Models */,
 				A379CC2C2B8E36B4005D9F8B /* Main.storyboard */,
 				A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */,
@@ -85,9 +86,19 @@
 		DB44CEAE2C99CB6C00C7E0AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E90E12092C9B2DF80068F560 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
+				E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */,
 				A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
+				E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */,
 				A379CC412B962F05005D9F8B /* Quote.swift in Sources */,
 				A379CC3D2B8F9323005D9F8B /* InitialViewController.swift in Sources */,
 			);
