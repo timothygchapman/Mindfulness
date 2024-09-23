@@ -13,7 +13,7 @@
 		A379CC2E2B8E36B4005D9F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2C2B8E36B4005D9F8B /* Main.storyboard */; };
 		A379CC302B8E36B5005D9F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */; };
 		A379CC332B8E36B5005D9F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC312B8E36B5005D9F8B /* LaunchScreen.storyboard */; };
-		A379CC3D2B8F9323005D9F8B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */; };
+		A379CC3D2B8F9323005D9F8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3C2B8F9323005D9F8B /* HomeViewController.swift */; };
 		A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3E2B962EED005D9F8B /* QuoteController.swift */; };
 		A379CC412B962F05005D9F8B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC402B962F05005D9F8B /* Quote.swift */; };
 		DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */; };
@@ -21,6 +21,8 @@
 		DB732F142C9B291100F3C77F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB732F132C9B291100F3C77F /* DataStore.swift */; };
 		E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */; };
 		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
+		E9B043802CA0DC4A00B478DF /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */; };
+		E9B043822CA0DCA600B478DF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B043812CA0DCA600B478DF /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +34,7 @@
 		A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A379CC322B8E36B5005D9F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A379CC342B8E36B5005D9F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A379CC3C2B8F9323005D9F8B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A379CC3E2B962EED005D9F8B /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		A379CC402B962F05005D9F8B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathExercise.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		DB732F132C9B291100F3C77F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheckInViewController.swift; sourceTree = "<group>"; };
 		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
+		E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		E9B043812CA0DCA600B478DF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,6 @@
 				E90E12092C9B2DF80068F560 /* ViewControllers */,
 				DB44CEAE2C99CB6C00C7E0AC /* Models */,
 				A379CC2C2B8E36B4005D9F8B /* Main.storyboard */,
-				A379CC3C2B8F9323005D9F8B /* InitialViewController.swift */,
 				A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */,
 				A379CC312B8E36B5005D9F8B /* LaunchScreen.storyboard */,
 				A379CC342B8E36B5005D9F8B /* Info.plist */,
@@ -109,8 +112,11 @@
 		E90E12092C9B2DF80068F560 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9B043812CA0DCA600B478DF /* LoadingViewController.swift */,
+				E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */,
+				A379CC3C2B8F9323005D9F8B /* HomeViewController.swift */,
+				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
 				E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */,
-				9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 				DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
 				E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */,
+				E9B043802CA0DC4A00B478DF /* HistoryTableViewController.swift in Sources */,
+				E9B043822CA0DCA600B478DF /* LoadingViewController.swift in Sources */,
 				A379CC412B962F05005D9F8B /* Quote.swift in Sources */,
+				A379CC3D2B8F9323005D9F8B /* HomeViewController.swift in Sources */,
 				DB732F142C9B291100F3C77F /* DataStore.swift in Sources */,
-				A379CC3D2B8F9323005D9F8B /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 675SH673K8;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mindfulness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 675SH673K8;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mindfulness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

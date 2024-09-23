@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     
     override func viewDidLoad() {
