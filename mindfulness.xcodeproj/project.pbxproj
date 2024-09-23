@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */; };
 		A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC262B8E36B4005D9F8B /* AppDelegate.swift */; };
 		A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */; };
 		A379CC2E2B8E36B4005D9F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2C2B8E36B4005D9F8B /* Main.storyboard */; };
@@ -21,12 +20,12 @@
 		DB732F142C9B291100F3C77F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB732F132C9B291100F3C77F /* DataStore.swift */; };
 		E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */; };
 		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
+		E9A1CB3F2CA1BBEF00C84A45 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A1CB3E2CA1BBEF00C84A45 /* BreathViewController.swift */; };
 		E9B043802CA0DC4A00B478DF /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */; };
 		E9B043822CA0DCA600B478DF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B043812CA0DCA600B478DF /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		A379CC232B8E36B4005D9F8B /* mindfulness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfulness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A379CC262B8E36B4005D9F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		DB732F132C9B291100F3C77F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheckInViewController.swift; sourceTree = "<group>"; };
 		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
+		E9A1CB3E2CA1BBEF00C84A45 /* BreathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		E9B043812CA0DCA600B478DF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,10 +112,10 @@
 		E90E12092C9B2DF80068F560 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9A1CB3E2CA1BBEF00C84A45 /* BreathViewController.swift */,
 				E9B043812CA0DCA600B478DF /* LoadingViewController.swift */,
 				E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */,
 				A379CC3C2B8F9323005D9F8B /* HomeViewController.swift */,
-				A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */,
 				E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */,
 			);
 			path = ViewControllers;
@@ -192,7 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */,
 				A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */,
 				DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */,
 				E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */,
@@ -204,6 +203,7 @@
 				E9B043822CA0DCA600B478DF /* LoadingViewController.swift in Sources */,
 				A379CC412B962F05005D9F8B /* Quote.swift in Sources */,
 				A379CC3D2B8F9323005D9F8B /* HomeViewController.swift in Sources */,
+				E9A1CB3F2CA1BBEF00C84A45 /* BreathViewController.swift in Sources */,
 				DB732F142C9B291100F3C77F /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
