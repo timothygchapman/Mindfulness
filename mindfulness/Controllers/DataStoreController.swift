@@ -10,7 +10,7 @@ import Foundation
 
 class DataStoreController {
     static let shared = DataStoreController()
-    static let dataStore = DataStore()
+    static let dataStore = DataStore.current
     let defaults = UserDefaults.standard
     var checkInArray: [CheckIn] = []
     var breathExerciseArray: [BreathExercise] = []

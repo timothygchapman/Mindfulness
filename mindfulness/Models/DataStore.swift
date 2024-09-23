@@ -8,61 +8,62 @@
 import Foundation
 import UIKit
 
-struct WellnessLog {
-    var checkIn: CheckIn
-    var breathExercise: BreathExercise
-    
-    init(checkIn: CheckIn, breathExercise: BreathExercise) {
-        self.checkIn = checkIn
-        self.breathExercise = breathExercise
-    }
+enum History: Codable {
+    case checkIn(CheckIn)
+    case breathExercise(BreathExercise)
 }
 
-struct DataStore {
-    let defaults = UserDefaults.standard
-    var checkInArray: [CheckIn] = []
-    var breathExerciseArray: [BreathExercise] = []
-    var checkInArrayKey = "checkInArray"
-    var breathExerciseKey = "breathExercise"
-//    private var logs: [WellnessLog]
-//    private var storageFileURL: URL
-//    var newCheckIn: CheckIn
-//    var newBreathExercise: BreathExercise
-//    var newJournalEntry = ""
-//    var newMoodEmoji = ""
-//    var breathIntervals = 0
-//    var exerciseDuration = 0
-    
-    
-    
-    
-    mutating func addCheckIn(checkIn: CheckIn) {
-        checkInArray.append(checkIn)
-        
-//        defaults.set(checkInView.text, forKey: checkInView.journalEntry)
-//        defaults.set(checkInView.selectedMood, forKey: checkInView.Emojis)
-        /// Rest of this logic here would look something like:
-        ///  checkInView.Text = checkIn.newJournalEntry
-        ///  checkinView.Emojis = checkIn.newMoodEmoji
-    }
-    
-    mutating func addBreathExercise(breathExercise: BreathExercise) {
-        breathExerciseArray.append(breathExercise)
-    }
-    
-    /// What is the difference between between getWellnessLog & loadWellnessLog??
-//    func getWellnessLog() -> [WellnessLog]? {
-//        guard let retrievedWellnessLog = try?
+// code block is visual reference, not for functionality
+//func cellForRowAtINdexPath(_ history: History) {
+//    switch history {
+//    case .breathExercise(let exercise):
+//        // you now have an Exercise object
+//        break
+//    case .checkIn(let checkIn):
+//        // you now have a CheckIn object
+//        break
 //    }
+//}
+//
+//func addToHistory(_ checkin: CheckIn) {
+//    let history = History.checkIn(checkin)
+//}
+
+class DataStore {
+    static var current = DataStore()
     
+    var historyArray: [History] = []
+    let savingFilePath = URL.documentsDirectory.appending(path: "WellnessHistory.txt")
     
-    private func saveWellnessLog() {
-        defaults.set(checkInArray, forKey: checkInArrayKey)
-        defaults.set(breathExerciseArray, forKey: breathExerciseKey)
+    private init() {
+        loadHistory()
     }
     
-    private mutating func loadWellnessLog() {
-        checkInArray = defaults.array(forKey: checkInArrayKey) as? [CheckIn] ?? []
-        breathExerciseArray = defaults.array(forKey: breathExerciseKey) as? [BreathExercise] ?? []
+    func addCheckIn(checkIn: CheckIn) {
+        historyArray.append(History.checkIn(checkIn))
+        saveHistory()
+    }
+    
+    func addBreathExercise(breathExercise: BreathExercise) {
+        historyArray.append(History.breathExercise(breathExercise))
+        saveHistory()
+    }
+    
+    private func saveHistory() {
+        do {
+            let data = try JSONEncoder().encode(historyArray)
+            try data.write(to: savingFilePath)
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func loadHistory() {
+        guard let data = try? Data.init(contentsOf: savingFilePath) else { return }
+        do {
+            historyArray = try JSONDecoder().decode([History].self, from: data)
+        } catch {
+            print(error)
+        }
     }
 }
