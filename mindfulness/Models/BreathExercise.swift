@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-struct BreathExercise {
+struct BreathExercise: Codable {
     var breathIntervalSeconds: Int
-    var durationSeconds: Int
+    var numberOfCycles: Int
     var timeStamp: Date
 }
 
@@ -41,16 +41,16 @@ extension BreathExercise {
     mutating func setExerciseDuration(_ exerciseDuration: ExerciseDuration) {
         switch exerciseDuration {
         case .beginner:
-            durationSeconds = 4
+            numberOfCycles = 4
         case .intermediate:
-            durationSeconds = 6
+            numberOfCycles = 6
         case .advanced:
-            durationSeconds = 8
+            numberOfCycles = 8
         }
     }
     
-    func getBreathExercise() -> Int {
-       return breathIntervalSeconds * durationSeconds
+    func getDurationSeconds() -> Int {
+       return breathIntervalSeconds * numberOfCycles
     }
     
 }

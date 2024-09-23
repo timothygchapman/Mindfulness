@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */; };
 		A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC262B8E36B4005D9F8B /* AppDelegate.swift */; };
 		A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */; };
-		A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */; };
 		A379CC2E2B8E36B4005D9F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2C2B8E36B4005D9F8B /* Main.storyboard */; };
 		A379CC302B8E36B5005D9F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */; };
 		A379CC332B8E36B5005D9F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379CC312B8E36B5005D9F8B /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC3E2B962EED005D9F8B /* QuoteController.swift */; };
 		A379CC412B962F05005D9F8B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379CC402B962F05005D9F8B /* Quote.swift */; };
 		DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */; };
+		DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */; };
+		DB732F142C9B291100F3C77F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB732F132C9B291100F3C77F /* DataStore.swift */; };
 		E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */; };
 		E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997C4C92C99CE1100C40C30 /* CheckInObject.swift */; };
 		E9B043802CA0DC4A00B478DF /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */; };
@@ -24,10 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9ACB171E2C9DD2B7005B4944 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		A379CC232B8E36B4005D9F8B /* mindfulness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfulness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A379CC262B8E36B4005D9F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A379CC2A2B8E36B4005D9F8B /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		A379CC2D2B8E36B4005D9F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A379CC2F2B8E36B5005D9F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A379CC322B8E36B5005D9F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		A379CC3E2B962EED005D9F8B /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		A379CC402B962F05005D9F8B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathExercise.swift; sourceTree = "<group>"; };
+		DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreController.swift; sourceTree = "<group>"; };
+		DB732F132C9B291100F3C77F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E90E12072C9B2D170068F560 /* CreateCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheckInViewController.swift; sourceTree = "<group>"; };
 		E997C4C92C99CE1100C40C30 /* CheckInObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInObject.swift; sourceTree = "<group>"; };
 		E9B0437F2CA0DC4A00B478DF /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			children = (
 				A379CC262B8E36B4005D9F8B /* AppDelegate.swift */,
 				A379CC282B8E36B4005D9F8B /* SceneDelegate.swift */,
+				DB4880E82C9DB95E00B8C6AB /* Controllers */,
 				E90E12092C9B2DF80068F560 /* ViewControllers */,
 				DB44CEAE2C99CB6C00C7E0AC /* Models */,
 				A379CC2C2B8E36B4005D9F8B /* Main.storyboard */,
@@ -89,10 +94,19 @@
 		DB44CEAE2C99CB6C00C7E0AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
 				DB44CEAC2C99CB5F00C7E0AC /* BreathExercise.swift */,
+				E997C4C92C99CE1100C40C30 /* CheckInObject.swift */,
+				DB732F132C9B291100F3C77F /* DataStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DB4880E82C9DB95E00B8C6AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB4880E62C9DB95900B8C6AB /* DataStoreController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E90E12092C9B2DF80068F560 /* ViewControllers */ = {
@@ -178,17 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACB171F2C9DD2B7005B4944 /* BreathViewController.swift in Sources */,
 				A379CC3F2B962EED005D9F8B /* QuoteController.swift in Sources */,
 				DB44CEAD2C99CB5F00C7E0AC /* BreathExercise.swift in Sources */,
 				E997C4CA2C99CE1100C40C30 /* CheckInObject.swift in Sources */,
-				A379CC2B2B8E36B4005D9F8B /* BreathViewController.swift in Sources */,
 				A379CC272B8E36B4005D9F8B /* AppDelegate.swift in Sources */,
+				DB4880E72C9DB95900B8C6AB /* DataStoreController.swift in Sources */,
 				A379CC292B8E36B4005D9F8B /* SceneDelegate.swift in Sources */,
 				E90E12082C9B2D170068F560 /* CreateCheckInViewController.swift in Sources */,
 				E9B043802CA0DC4A00B478DF /* HistoryTableViewController.swift in Sources */,
 				E9B043822CA0DCA600B478DF /* LoadingViewController.swift in Sources */,
 				A379CC412B962F05005D9F8B /* Quote.swift in Sources */,
 				A379CC3D2B8F9323005D9F8B /* HomeViewController.swift in Sources */,
+				DB732F142C9B291100F3C77F /* DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
