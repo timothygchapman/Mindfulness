@@ -14,7 +14,7 @@ enum History: Codable {
 }
 
 // code block is visual reference, not for functionality
-//func cellForRowAtINdexPath(_ history: History) {
+//func cellForRowAtIndexPath(_ history: History) {
 //    switch history {
 //    case .breathExercise(let exercise):
 //        // you now have an Exercise object
