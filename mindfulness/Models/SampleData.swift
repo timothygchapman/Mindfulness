@@ -16,8 +16,8 @@ class SampleData {
                 selectedMood: CheckIn.MoodEmoji.happy
             )),
             .breathExercise(BreathExercise(
-                breathIntervals: .box,
-                numberOfCycles: .intermediate,
+                typeOfBreathExercise: .box,
+                exerciseDuration: .intermediate,
                 timeStamp: Date()
             )),
             .checkIn(CheckIn(
@@ -25,8 +25,8 @@ class SampleData {
                 selectedMood: CheckIn.MoodEmoji.anxious
             )),
             .breathExercise(BreathExercise(
-                breathIntervals: .fourSevenEight,
-                numberOfCycles: .advanced,
+                typeOfBreathExercise: .fourSevenEight,
+                exerciseDuration: .advanced,
                 timeStamp: Date()
             )),
             .checkIn(CheckIn(
@@ -34,8 +34,8 @@ class SampleData {
                 selectedMood: .relaxed
             )),
             .breathExercise(BreathExercise(
-                breathIntervals: .resonance,
-                numberOfCycles: .intermediate,
+                typeOfBreathExercise: .resonance,
+                exerciseDuration: .intermediate,
                 timeStamp: Date()
             ))
                      

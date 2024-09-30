@@ -9,25 +9,26 @@ import Foundation
 import UIKit
 
 struct BreathExercise: Codable {
-    var breathIntervalSeconds: Int
-    var numberOfCycles: Int
+    var typeOfBreathExercise: TypeOfBreathExercise
+    var exerciseDuration: ExerciseDuration
     var timeStamp: Date
     
-    init(breathIntervals: BreathIntervals, numberOfCycles: ExerciseDuration, timeStamp: Date) {
-        self.breathIntervalSeconds = breathIntervals.rawValue
-        self.numberOfCycles = numberOfCycles.rawValue
+    
+    init(typeOfBreathExercise: TypeOfBreathExercise, exerciseDuration: ExerciseDuration, timeStamp: Date) {
+        self.typeOfBreathExercise = typeOfBreathExercise
+        self.exerciseDuration = exerciseDuration
         self.timeStamp = timeStamp
     }
 }
 
 extension BreathExercise {
-    enum BreathIntervals: Int {
+    enum TypeOfBreathExercise: Int, Codable {
         case box = 16
         case resonance = 10
         case fourSevenEight = 19
     }
     
-    enum ExerciseDuration: Int {
+    enum ExerciseDuration: Int, Codable {
         case beginner = 4
         case intermediate = 6
         case advanced = 8
@@ -55,8 +56,7 @@ extension BreathExercise {
 //        }
 //    }
     
-    func getDurationSeconds() -> Int {
-       return breathIntervalSeconds * numberOfCycles
-    }
-    
+//    func getDurationSeconds() -> Int {
+//       return breathIntervalSeconds * numberOfCycles
+//    }
 }
