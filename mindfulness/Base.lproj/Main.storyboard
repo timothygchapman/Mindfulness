@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="keD-go-hfT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="keD-go-hfT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GOC-gX-OSw">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="51.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOC-gX-OSw" id="eUJ-Na-TIx">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="51.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -207,7 +207,16 @@
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="ZJd-kJ-ASM"/>
                     <navigationItem key="navigationItem" id="jdl-pZ-2WA"/>
                     <connections>
+                        <outlet property="boxAdvanced" destination="BWs-qS-l9D" id="beE-DU-Odj"/>
+                        <outlet property="boxBeginner" destination="nPK-fl-gDD" id="N7f-yx-L72"/>
+                        <outlet property="boxIntermediate" destination="l7H-sG-wXF" id="ZDh-t8-I2k"/>
+                        <outlet property="fourSevenEightAdvancedBttn" destination="03d-2I-9X9" id="b8C-p4-CWK"/>
+                        <outlet property="fourSevenEightBeginnerBttn" destination="1Iu-JT-Z4s" id="8BE-0f-6Ug"/>
+                        <outlet property="fourSevenEightIntermediateBttn" destination="aMO-nE-5Ug" id="qOQ-bd-i8h"/>
                         <outlet property="quoteLabel" destination="yAO-b6-feL" id="ZVH-sg-yHf"/>
+                        <outlet property="rsnceAdvaced" destination="Jd7-rg-dCh" id="foX-VC-L9h"/>
+                        <outlet property="rsnceBeginner" destination="96m-35-Jbb" id="btg-uf-jvF"/>
+                        <outlet property="rsnceIntermediate" destination="c3d-bp-jhk" id="MAQ-rU-MAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVA-Xo-tEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -231,7 +240,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breath In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3S-h4-wwA">
-                                <rect key="frame" x="132" y="100" width="129.33333333333337" height="40.666666666666657"/>
+                                <rect key="frame" x="132" y="100" width="129.33333333333337" height="48.666666666666657"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
