@@ -12,64 +12,99 @@ class BreathViewController: UIViewController {
     @IBOutlet weak var circleView: UIView!
     @IBOutlet weak var instructionLabel: UILabel!
     
+    var breathExercise: BreathExercise?
+    private var animator: UIViewPropertyAnimator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        circleView.layer.cornerRadius = 12
+        setupCircleView()
+        startBreathingExercise()
+    }
+    
+    private func setupCircleView() {
+        circleView.layer.cornerRadius = circleView.bounds.width / 2
         circleView.layer.opacity = 0.5
-        
-        let originalRed = CGFloat(177.0/255.0)
-        let originalGreen = CGFloat(210.0/255.0)
-        let originalBlue = CGFloat(219.0/255.0)
-        
-        circleView.backgroundColor = UIColor(red: originalRed, green: originalGreen, blue: originalBlue, alpha: 1)
-        
-        let breathInOutDuration: Double = 5
-        let delayDuration: Double = 6
-        let totalDuration: Double = breathInOutDuration + delayDuration + breathInOutDuration
-        
-        let breathInOutRelativeDuration = breathInOutDuration / totalDuration
-        let firstStartRelativeTime: Double = 0
-        let secondStartRelativeTime = (breathInOutDuration + delayDuration) / totalDuration
-        
-        UIView.animateKeyframes(withDuration: totalDuration, delay: 0, options: [.repeat, .allowUserInteraction]) {
-            UIView.addKeyframe(withRelativeStartTime: firstStartRelativeTime, relativeDuration: breathInOutRelativeDuration) {
-                self.circleView.transform = CGAffineTransform(scaleX: 5, y: 5)
-                self.circleView.layer.opacity = 1
-            }
-            UIView.addKeyframe(withRelativeStartTime: breathInOutRelativeDuration, relativeDuration: delayDuration / totalDuration) {
-                let red = CGFloat(0.0/255.0)
-                let green = CGFloat(109.0/255.0)
-                let blue = CGFloat(176.0/255.0)
-                
-                self.circleView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
-            }
-            UIView.addKeyframe(withRelativeStartTime: secondStartRelativeTime, relativeDuration: breathInOutRelativeDuration) {
-                self.circleView.transform = CGAffineTransform(scaleX: 1, y: 1)
-                self.circleView.layer.opacity = 0.5
-                self.circleView.backgroundColor = UIColor(red: originalRed, green: originalGreen, blue: originalBlue, alpha: 1)
-            }
+        circleView.backgroundColor = UIColor(red: 177/255, green: 210/255, blue: 219/255, alpha: 1)
+    }
+    
+    private func startBreathingExercise() {
+        guard let exercise = breathExercise else {
+            print("Breath exercise not set")
+            return
         }
         
-        Task {
-            do {
-                while true {
-                    instructionLabel.text = "Breath  In"
-                    try await Task.sleep(nanoseconds: UInt64(5000000000))
-                    instructionLabel.text = "Hold"
-                    try await Task.sleep(nanoseconds: UInt64(5000000000))
-                    instructionLabel.text = "Breath Out"
-                    try await Task.sleep(nanoseconds: UInt64(5000000000))
-                }
-                
-            } catch {
-                print(error)
-            }
+        let (inhaleTime, holdTime, exhaleTime) = getBreathingTimes(for: exercise.typeOfBreathExercise)
+        let totalCycleDuration = Double(inhaleTime + holdTime + exhaleTime)
+        let numberOfCycles = exercise.exerciseDuration.rawValue
+        
+        animateBreathing(inhaleTime: inhaleTime, holdTime: holdTime, exhaleTime: exhaleTime, totalCycles: numberOfCycles)
+        updateInstructions(inhaleTime: inhaleTime, holdTime: holdTime, exhaleTime: exhaleTime, totalCycles: numberOfCycles)
+    }
+    
+    private func getBreathingTimes(for exerciseType: BreathExercise.TypeOfBreathExercise) -> (inhale: Double, hold: Double, exhale: Double) {
+        switch exerciseType {
+        case .box:
+            return (4, 4, 4)
+        case .resonance:
+            return (4, 2, 4)
+        case .fourSevenEight:
+            return (4, 7, 8)
         }
     }
     
+    private func animateBreathing(inhaleTime: Double, holdTime: Double, exhaleTime: Double, totalCycles: Int) {
+        let totalDuration = Double(totalCycles) * (inhaleTime + holdTime + exhaleTime)
+        
+        animator?.stopAnimation(true)
+        animator = UIViewPropertyAnimator(duration: totalDuration, curve: .linear) { [weak self] in
+            guard let self = self else { return }
+            
+            UIView.animateKeyframes(withDuration: totalDuration, delay: 0, options: [.repeat, .calculationModeLinear]) {
+                let cycleDuration = inhaleTime + holdTime + exhaleTime
+                let cycleRelativeDuration = cycleDuration / totalDuration
+                
+                for cycle in 0..<totalCycles {
+                    let cycleStartTime = Double(cycle) * cycleRelativeDuration
+                    
+                    // Inhale
+                    UIView.addKeyframe(withRelativeStartTime: cycleStartTime, relativeDuration: inhaleTime / totalDuration) {
+                        self.circleView.transform = CGAffineTransform(scaleX: 2, y: 2)
+                        self.circleView.backgroundColor = UIColor(red: 0/255, green: 109/255, blue: 176/255, alpha: 1)
+                        self.circleView.layer.opacity = 1
+                    }
+                    
+                    // Hold
+                    UIView.addKeyframe(withRelativeStartTime: cycleStartTime + (inhaleTime / totalDuration), relativeDuration: holdTime / totalDuration) {
+                        self.circleView.transform = CGAffineTransform(scaleX: 2, y: 2).rotated(by: .pi / 4)
+                    }
+                    
+                    // Exhale
+                    UIView.addKeyframe(withRelativeStartTime: cycleStartTime + ((inhaleTime + holdTime) / totalDuration), relativeDuration: exhaleTime / totalDuration) {
+                        self.circleView.transform = .identity
+                        self.circleView.backgroundColor = UIColor(red: 177/255, green: 210/255, blue: 219/255, alpha: 1)
+                        self.circleView.layer.opacity = 0.5
+                    }
+                }
+            }
+        }
+        
+        animator?.startAnimation()
+    }
     
-
-
+    private func updateInstructions(inhaleTime: Double, holdTime: Double, exhaleTime: Double, totalCycles: Int) {
+        Task {
+            for _ in 1...totalCycles {
+                instructionLabel.text = "Breathe In"
+                try? await Task.sleep(nanoseconds: UInt64(inhaleTime * 1_000_000_000))
+                
+                instructionLabel.text = "Hold"
+                try? await Task.sleep(nanoseconds: UInt64(holdTime * 1_000_000_000))
+                
+                instructionLabel.text = "Breathe Out"
+                try? await Task.sleep(nanoseconds: UInt64(exhaleTime * 1_000_000_000))
+            }
+            
+            instructionLabel.text = "Exercise Complete"
+        }
+    }
 }
-

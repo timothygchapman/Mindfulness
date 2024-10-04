@@ -44,6 +44,7 @@ class HomeViewController: UIViewController {
         if boxBeginnerBttn.isEnabled {
             breathExercise.typeOfBreathExercise = BreathExercise.TypeOfBreathExercise.box
             breathExercise.exerciseDuration = BreathExercise.ExerciseDuration.beginner
+            
         }
         
         if boxIntermediateBttn.isEnabled {
